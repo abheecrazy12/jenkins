@@ -12,6 +12,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "mysimple1234321000"
+  bucket = "abheesaxena890"
   force_destroy = false
 }
