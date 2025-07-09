@@ -13,10 +13,5 @@ provider "aws" {
 
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "mysimple1234321000"
-  # Remove acl from here
-}
-
-resource "aws_s3_bucket_acl" "my_bucket_acl" {
-  bucket = aws_s3_bucket.my_bucket.id
-  acl    = "private"
+  force_destroy = false
 }
